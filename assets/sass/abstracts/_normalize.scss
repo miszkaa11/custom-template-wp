@@ -1,0 +1,28 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/root" as *;
+@use "../abstracts/variables" as*;
+
+/*
+    Normalize
+-------------------------------------
+*/
+
+body {
+  background-color: $color__white;
+}
+
+a {
+  @include transition();
+  &:visited,
+  &:focus,
+  &:active {}
+  @media (hover: hover) {
+    &:hover {}
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  @include transition();
+}

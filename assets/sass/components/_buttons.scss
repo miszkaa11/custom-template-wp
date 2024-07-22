@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/root" as *;
+
+/*
+    Buttons
+-------------------------------------
+*/
+
+.btn {
+  cursor: pointer;
+  @include transition();
+  &:hover {}
+}

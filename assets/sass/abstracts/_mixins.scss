@@ -1,0 +1,64 @@
+/*
+    Mixins
+-------------------------------------
+*/
+
+// Containers
+@mixin container($max-width) {
+  margin: 0 auto;
+  height: 100%;
+  max-width: $max-width;
+}
+
+// Helpers
+@mixin no-user-select() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin transition($attribute: all, $time: 0.3s, $easing: ease-in-out) {
+  -webkit-transition: $attribute $time $easing;
+  -moz-transition: $attribute $time $easing;
+  -ms-transition: $attribute $time $easing;
+  -o-transition: $attribute $time $easing;
+  transition: $attribute $time $easing;
+}
+
+@mixin scale($scaled: 0.9) {
+  transform: scale($scaled);
+  -o-transform: scale($scaled);
+  -moz-transform: scale($scaled);
+  -webkit-transform: scale($scaled);
+}
+
+@mixin box-shadow($shadow-value) {
+  -webkit-box-shadow: $shadow-value; /* Safari and older Chrome versions */
+  -moz-box-shadow: $shadow-value; /* Firefox */
+  -ms-box-shadow: $shadow-value; /* Internet Explorer */
+  -o-box-shadow: $shadow-value; /* Opera */
+  box-shadow: $shadow-value; /* Standard syntax */
+}
+
+// Flexbox
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Content box
+@mixin img100() {
+  width: 100%;
+  height: 100%;
+}
+
+
+

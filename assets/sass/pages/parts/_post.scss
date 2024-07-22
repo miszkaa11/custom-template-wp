@@ -1,0 +1,18 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/root" as *;
+@use "../../abstracts/variables" as *;
+
+/*
+    Info
+-------------------------------------
+*/
+
+
+.single,
+.blog {
+  .post,
+  .archive {
+    margin-top: var(--navigation__height);
+  }
+}
+

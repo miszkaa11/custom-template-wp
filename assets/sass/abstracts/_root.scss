@@ -1,0 +1,74 @@
+@use "variables" as *;
+
+/*
+    Root
+-------------------------------------
+*/
+
+:root {
+  // Navigation
+  --navigation__width: 100%;
+  --navigation__height: 100px;
+
+  --navigation-container__width: 25%;
+  --navigation-container__height: 100vh;
+
+  --menu-item__space-s: 0.5rem;
+  --menu-item__space-m: 1rem;
+
+  --menu-toggle__width: 2.5rem;
+  --menu-toggle__height: 2rem;
+
+  --menu-toggle-span__height: 4px;
+  --menu-toggle-span__position: 0.75rem;
+
+  // Section
+
+  // Content
+  --content__max-width-s: $content__max-width-s;
+  --content__max-width-m: $content__max-width-m;
+  --content__max-width-l: $content__max-width-l;
+  --content__spacing: 0 2rem;
+
+  --content__space-xs: 0.5rem;
+  --content__space-s: 1rem;
+  --content__space-m: 2rem;
+  --content__space-l: 3rem;
+
+  // Fonts
+
+  // Font size
+
+  // Font weight
+  --font-weight__light: $font-weight__light;
+  --font-weight__regular: $font-weight__regular;
+  --font-weight__medium: $font-weight__medium;
+  --font-weight__bold: $font-weight__bold;
+
+  // Colors
+
+  // Title
+
+  // Form
+
+  // Button
+}
+
+/*
+    Media queries
+-------------------------------------
+*/
+
+@media screen and (max-width: 1200px) {
+  :root {
+    // Navigation
+    --navigation-container__width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    // Navigation
+    --navigation-container__width: 100%;
+  }
+}

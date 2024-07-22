@@ -1,0 +1,17 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/root" as *;
+@use "../abstracts/variables" as *;
+
+/*
+    Footer
+-------------------------------------
+*/
+
+.footer {
+  margin-top: var(--content__space-l);
+}
+
+/*
+    Media queries
+-------------------------------------
+*/
